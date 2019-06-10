@@ -42,9 +42,9 @@ def selective_tweet_shortener (tweet)
 #  array.each do |tweet|
   #str = tweet.split(" ")
     if tweet.length > 140
-      puts word_substituter(tweet)
-
+      return word_substituter(tweet)
     end
+    return tweet
 #  end
 end
 
