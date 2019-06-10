@@ -38,13 +38,13 @@ def bulk_tweet_shortener (array)
   end
 end
 
-def selective_tweet_shortener (array)
-  array.each do |tweet|
+def selective_tweet_shortener (tweet)
+#  array.each do |tweet|
     if tweet.split(" ").length >140
       puts word_substituter(tweet)
 
     end
-  end
+#  end
 end
 
 word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
