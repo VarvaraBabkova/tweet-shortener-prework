@@ -28,8 +28,8 @@ def word_substituter (tweet)
     end
     tweet_str += word + " "
   end
-  puts tweet_str
-  return tweet_str.chomp!(" ")#tweet.join(" ")
+  tweet_str = tweet_str.chomp(" ")
+  return tweet_str
 end
 
 def bulk_tweet_shortener (array)
