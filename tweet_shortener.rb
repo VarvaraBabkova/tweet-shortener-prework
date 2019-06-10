@@ -40,7 +40,8 @@ end
 
 def selective_tweet_shortener (tweet)
 #  array.each do |tweet|
-    if tweet.split(" ").length >140
+  str = tweet.split(" ")
+    if str.length > 140
       puts word_substituter(tweet)
 
     end
