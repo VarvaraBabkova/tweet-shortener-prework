@@ -1,6 +1,6 @@
 
 def dictionary (word)
-  word.downcase!
+  word.downcase
   dict = {
     "hello" => 'hi',
     "to" => '2',
