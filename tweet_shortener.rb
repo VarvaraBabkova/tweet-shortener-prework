@@ -14,7 +14,7 @@ def dictionary (word)
     "and" => "&"
   }
   if dict.keys.include?(word.downcase)
-    return dict[word]
+    return dict[word.downcase]
   end
   return nil
 end
