@@ -23,4 +23,6 @@ def word_substituter (tweet)
   tweet.each do |word|
     word = dictionary(word) if dictionary(word) != nil
   end
+
+  return tweet.join(" ")
 end
