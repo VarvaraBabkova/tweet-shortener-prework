@@ -17,5 +17,5 @@ def dictionary (word)
   end
 end
 def word_substituter (tweet)
-  
+
 end
