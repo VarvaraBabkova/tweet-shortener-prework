@@ -1,5 +1,6 @@
 
 def dictionary (word)
+  word.downcase!
   dict = {
     "hello" => 'hi',
     "to" => '2',
@@ -20,7 +21,6 @@ end
 def word_substituter (tweet)
   tweet.split(" ")
   tweet.each do |word|
-    word = dictionary(word)#word.chomp(",")
-
+    word = dictionary(word) if dictionary(word) != nil
   end
 end
