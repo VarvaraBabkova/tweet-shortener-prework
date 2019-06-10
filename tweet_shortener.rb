@@ -18,5 +18,9 @@ def dictionary (word)
   return nil
 end
 def word_substituter (tweet)
+  tweet.split(" ")
+  tweet.each do |word|
+    word = dictionary(word)#word.chomp(",")
 
+  end
 end
