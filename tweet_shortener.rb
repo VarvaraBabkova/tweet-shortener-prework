@@ -12,7 +12,10 @@ def dictionary (word)
     "at" => "@" ,
     "and" => "&"
   }
-  return dict[word]
+  if dict.keys.include?(word)
+    return dict[word]
+  end
 end
-def word_substituter (messsage)
+def word_substituter (tweet)
+  
 end
