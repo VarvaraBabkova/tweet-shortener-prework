@@ -23,7 +23,9 @@ def word_substituter (tweet)
   tweet = tweet.split(" ")
   tweet_str = ""
   tweet.each do |word|
-    word = dictionary(word) if dictionary(word) != nil
+    if dictionary(word) != nil
+      word = dictionary(word)
+    end
     str += word + " "
   end
 
