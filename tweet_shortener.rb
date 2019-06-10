@@ -16,7 +16,7 @@ def dictionary (word)
   if dict.keys.include?(word.downcase)
     return dict[word.downcase]
   end
-  return nil
+  #return nil
 end
 
 def word_substituter (tweet)
