@@ -15,6 +15,7 @@ def dictionary (word)
   if dict.keys.include?(word)
     return dict[word]
   end
+  return nil
 end
 def word_substituter (tweet)
 
