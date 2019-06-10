@@ -18,10 +18,13 @@ def dictionary (word)
   end
   return nil
 end
+
 def word_substituter (tweet)
   tweet = tweet.split(" ")
+  tweet_str = ""
   tweet.each do |word|
     word = dictionary(word) if dictionary(word) != nil
+    str += word + " "
   end
 
   return tweet.join(" ")
