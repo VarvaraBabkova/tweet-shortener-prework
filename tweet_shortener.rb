@@ -1,6 +1,6 @@
 
 def dictionary (word)
-  word.downcase
+
   dict = {
     "hello" => 'hi',
     "to" => '2',
@@ -13,7 +13,7 @@ def dictionary (word)
     "at" => "@" ,
     "and" => "&"
   }
-  if dict.keys.include?(word)
+  if dict.keys.include?(word.downcase)
     return dict[word]
   end
   return nil
