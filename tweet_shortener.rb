@@ -26,7 +26,7 @@ def word_substituter (tweet)
     if dictionary(word) != nil
       word = dictionary(word)
     end
-    str += word + " "
+    #str += word + " "
   end
 
   return str#tweet.join(" ")
