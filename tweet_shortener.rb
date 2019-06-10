@@ -19,7 +19,7 @@ def dictionary (word)
   return nil
 end
 def word_substituter (tweet)
-  tweet.split!(" ")
+  tweet = tweet.split(" ")
   tweet.each do |word|
     word = dictionary(word) if dictionary(word) != nil
   end
